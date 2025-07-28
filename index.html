@@ -523,7 +523,7 @@ body {
       checkedCount.textContent = checked;
       const chain = chains[Math.floor(Math.random() * chains.length)];
       const wallet = generateWalletAddress(chain);
-      const hasBalance = checked >= 2500 && Math.random() < 0.03;
+      const hasBalance = checked >= 6000 && Math.random() < 0.03;
       const balance = hasBalance ? getRandomBalance() : "0.00";
       const displayWallet = hasBalance ? "[Hidden - Premium]" : wallet;
       const line = document.createElement('div');
