@@ -311,45 +311,33 @@ body {
 
   </style>
 <style>
-:root {
-  --bg-dark: #0f0f1a;
-  --bg-card: #1a1a2e;
-  --primary: #00c6ff;
-  --secondary: #0072ff;
-  --text-light: #f1f1f1;
-  --text-muted: #aaa;
-}
-* {
-  margin: 0; padding: 0; box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-body {
-  background: var(--bg-dark);
-  color: var(--text-light);
-  min-height: 100vh;
-}
-.notice {
-  background: linear-gradient(90deg, var(--secondary), var(--primary));
+.notice-bar {
+  position: fixed;
+  top: 0; /* or bottom: 0; if you want it at the bottom */
+  left: 0;
+  width: 100%;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
   padding: 10px;
   text-align: center;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
   font-size: 14px;
-  font-weight: 600;
-  color: #fff;
 }
-.notice marquee {
-  font-size: 15px;
+.notice-bar a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
 }
-  </style>
+</style>
   
 </head>
 <body>
- <!-- Notice -->
-  <div class="notice">
-    <marquee behavior="scroll" direction="left" scrollamount="5">
-      ⚠️ For any questions and purchase DM 👉 <a href="https://t.me/cryptos_search_admin" target="_blank" style="color:#fff; text-decoration:underline;">https://t.me/cryptos_search_admin</a> ⚠️
-    </marquee>
-  </div>
-
+ <div class="notice-bar">
+  ⚠️ For any questions and purchase DM 👉 
+  <a href="https://t.me/cryptos_search_admin" target="_blank">https://t.me/cryptos_search_admin</a>
+</div>
   <div class="coins-bg">
   <!-- Bitcoin -->
   <div class="coin" style="left: 5%; background-image: url('https://cryptologos.cc/logos/bitcoin-btc-logo.png'); animation-delay: 0s;"></div>
